@@ -124,7 +124,7 @@ export const characters = [
 		id: 20,
 		name: "Buddy",
 		description: "Patient for days.",
-		image: "../src/assets/Buddy.png",
+		image: "./src/assets/Buddy.png",
 	},
 	{
 		id: 21,
