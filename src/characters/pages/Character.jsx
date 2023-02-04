@@ -22,7 +22,7 @@ const Character = () => {
 		<>
 			<div className="top-container">
 				<LazyLoadImage
-					src={character.image}
+					src={`/assets/${character.image}`}
 					alt={characters.name}
 					className="character-img"
 				/>

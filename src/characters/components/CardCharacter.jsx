@@ -1,5 +1,5 @@
 import React from "react";
-//import { LazyLoadImage } from "react-lazy-load-image-component";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import "./cardCharacter.css";
 
@@ -8,7 +8,7 @@ const CardCharacter = ({ character }) => {
 	console.log(characterImageUrl); */
 	return (
 		<div className="card-container">
-			<img src={`/assets/${character.image}`} className="card-img" />
+			<LazyLoadImage src={`/assets/${character.image}`} className="card-img" />
 			<h1 className="title cardTitle">{character.name}</h1>
 			<p>{character.description.slice(0, 70)}...</p>
 
