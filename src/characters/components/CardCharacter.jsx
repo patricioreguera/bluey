@@ -8,7 +8,7 @@ const CardCharacter = ({ character }) => {
 	console.log(characterImageUrl); */
 	return (
 		<div className="card-container">
-			<img src={`../../src/assets/${character.image}`} className="card-img" />
+			<img src={`/assets/${character.image}`} className="card-img" />
 			<h1 className="title cardTitle">{character.name}</h1>
 			<p>{character.description.slice(0, 70)}...</p>
 
