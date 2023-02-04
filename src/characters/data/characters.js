@@ -124,19 +124,19 @@ export const characters = [
 		id: 20,
 		name: "Buddy",
 		description: "Patient for days.",
-		image: "./src/assets/Buddy.png",
+		image: "Buddy.png",
 	},
 	{
 		id: 21,
 		name: "Calypso",
 		description: "Bluey's teacher for Prep. An Aussie Shepherd.",
-		image: "../../assets/CALYPSO-01-copy.png",
+		image: "CALYPSO-01-copy.png",
 	},
 	{
 		id: 22,
 		name: "Winton",
 		description: "A very obedient breed.",
-		image: "../../assets/Winton.png",
+		image: "Winton.png",
 	},
 	{
 		id: 23,

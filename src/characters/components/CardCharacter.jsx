@@ -2,10 +2,12 @@ import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import "./cardCharacter.css";
+import "../../assets/";
 const CardCharacter = ({ character }) => {
+	const characterImageUrl = `/assets/${character.image}`;
 	return (
 		<div className="card-container">
-			<LazyLoadImage src={character.image} className="card-img" />
+			<LazyLoadImage src={characterImageUrl} className="card-img" />
 			<h1 className="title cardTitle">{character.name}</h1>
 			<p>{character.description.slice(0, 70)}...</p>
 
