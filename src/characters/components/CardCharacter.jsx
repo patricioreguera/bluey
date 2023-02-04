@@ -2,7 +2,7 @@ import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import "./cardCharacter.css";
-import "../../assets/";
+
 const CardCharacter = ({ character }) => {
 	const characterImageUrl = `/assets/${character.image}`;
 	return (
