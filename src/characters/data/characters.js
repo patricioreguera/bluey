@@ -130,13 +130,13 @@ export const characters = [
 		id: 21,
 		name: "Calypso",
 		description: "Bluey's teacher for Prep. An Aussie Shepherd.",
-		image: "../src/assets/CALYPSO-01-copy.png",
+		image: "../../../src/assets/CALYPSO-01-copy.png",
 	},
 	{
 		id: 22,
 		name: "Winton",
 		description: "A very obedient breed.",
-		image: "../src/assets/Winton.png",
+		image: "../../src/assets/Winton.png",
 	},
 	{
 		id: 23,
