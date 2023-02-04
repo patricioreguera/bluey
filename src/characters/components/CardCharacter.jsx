@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import "./cardCharacter.css";
 
 const CardCharacter = ({ character }) => {
-	const characterImageUrl = `../../src/assets/${character.image}`;
-	console.log(characterImageUrl);
+	/* 	const characterImageUrl = `../../src/assets/${character.image}`;
+	console.log(characterImageUrl); */
 	return (
 		<div className="card-container">
-			<img src={characterImageUrl} className="card-img" />
+			<img src={`../../src/assets/${character.image}`} className="card-img" />
 			<h1 className="title cardTitle">{character.name}</h1>
 			<p>{character.description.slice(0, 70)}...</p>
 
