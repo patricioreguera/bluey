@@ -1,0 +1,25 @@
+.character-img {
+    height: 400px;
+    margin-bottom: -90px;
+}
+
+.top-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url(../../assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+}
+
+.description-container{
+    background-color: var(--white);
+    margin-bottom: -90px;
+   
+    padding: 25px;
+    border-radius: 50px;
+    max-width: 500px;
+}

@@ -1,0 +1,6 @@
+.nav-item{
+    font-size: 26px;
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 15px;
+}

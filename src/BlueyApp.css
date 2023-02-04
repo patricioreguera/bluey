@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "bluey-font";   /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./fonts/hello.ttf") format("truetype");
+}

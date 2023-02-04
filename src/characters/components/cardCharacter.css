@@ -1,0 +1,36 @@
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+  max-width: 300px;
+    padding: 25px;
+    
+    border-radius: 15px;
+    margin: 150px 5px 0px 5px;
+}
+
+.cardTitle{
+    color: var(--seconday);
+}
+
+.card-img{
+   margin-top: -150px;
+    height: 200px; 
+   position: relative;
+}
+.card-button{
+    text-decoration: none;
+    background-color: var(--primary);
+    color: var(--seconday);
+    border: none;
+    padding: 15px 35px;
+    font-family: "bluey-font";
+    font-size: 15px;
+    border-radius: 50px;
+}
+
+.card-button:hover{
+background-color: var(--seconday);
+color: var(--white);
+}
