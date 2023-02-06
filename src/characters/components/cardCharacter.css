@@ -54,4 +54,5 @@
     background-color: var(--seconday);
     color: var(--white);
     animation-play-state: running;
+    transform:  scale(1.1);
 }

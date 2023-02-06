@@ -1,4 +1,4 @@
-export const characters = [
+export const charactersMock = [
 	{
 		id: 1,
 		name: "Bluey",

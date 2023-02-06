@@ -40,3 +40,14 @@
         opacity: 100%;
     }
 }
+
+
+.container-suggestions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}

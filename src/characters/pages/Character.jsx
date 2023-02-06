@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
-import { characters } from "../data/characters";
+import { charactersMock } from "../data/charactersMock";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import CardCharacter from "../components/CardCharacter";
 import "./Character.css";
 
 const Character = () => {
@@ -10,7 +11,14 @@ const Character = () => {
 	const onNavigateBack = () => {
 		navigate(-1);
 	};
-	const character = characters.find((character) => character.name === name);
+	const character = charactersMock.find((character) => character.name === name);
+	const characterSuggestion = charactersMock.filter(
+		(character) => character.name !== name
+	);
+	const randomNumber =
+		Math.floor(Math.random() * (charactersMock.length - 4 - 1 + 1)) + 1;
+	//Math.floor(Math.random() * (maximum – minimum + 1)) + minimum
+	characterSuggestion.slice(randomNumber, randomNumber + 3);
 	// =====> back to the characters if dont match
 	if (!character) {
 		console.log(character);
@@ -23,7 +31,7 @@ const Character = () => {
 			<div className="top-container">
 				<LazyLoadImage
 					src={`/assets/${character.image}`}
-					alt={characters.name}
+					alt={character.name}
 					className="character-img"
 				/>
 				<div className="description-container">
@@ -34,9 +42,13 @@ const Character = () => {
 					</button>
 				</div>
 			</div>
-			{/* <div className="container-suggestions">
-				<h5>mas sugerencias</h5>
-			</div> */}
+			<div className="container-suggestions">
+				{characterSuggestion
+					.slice(randomNumber, randomNumber + 3)
+					.map((suggestion) => (
+						<CardCharacter key={suggestion.id} character={suggestion} />
+					))}
+			</div>
 		</>
 	);
 };
