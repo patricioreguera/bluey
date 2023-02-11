@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import "./cardCharacter.css";
 
 const CardCharacter = ({ character }) => {
-	/* 	const characterImageUrl = `../../src/assets/${character.image}`;
-	console.log(characterImageUrl); */
 	return (
 		<div className="card-container">
 			<LazyLoadImage src={`/assets/${character.image}`} className="card-img" />

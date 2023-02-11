@@ -8,8 +8,11 @@ import "./Character.css";
 const Character = () => {
 	const { name } = useParams();
 	const navigate = useNavigate();
+
+	//navegate to the back page
 	const onNavigateBack = () => {
-		navigate(-1);
+		window.scrollTo(0, 0);
+		navigate("/characters");
 	};
 	const character = charactersMock.find((character) => character.name === name);
 	const characterSuggestion = charactersMock.filter(
@@ -25,6 +28,10 @@ const Character = () => {
 
 		return <Navigate to="/characters" />;
 	}
+	// scroll page to top every time character name change
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [name]);
 
 	return (
 		<>

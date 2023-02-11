@@ -9,7 +9,6 @@ import Character from "./characters/pages/Character";
 function BlueyApp() {
 	return (
 		<>
-			<Navbar />
 			<div>
 				<Routes>
 					<Route path="/" element={<BlueyPage />} />

@@ -48,6 +48,7 @@
     font-family: "bluey-font";
     font-size: 15px;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .card-button:hover{
@@ -55,4 +56,20 @@
     color: var(--white);
     animation-play-state: running;
     transform:  scale(1.1);
+}
+.card-button-inverted{
+    text-decoration: none;
+    background-color: var(--seconday);
+    color: var(--white);
+    border: none;
+    padding: 15px 35px;
+    font-family: "bluey-font";
+    font-size: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.card-button-inverted:hover{
+    animation-play-state: running;
+    transform:  scale(1.2);
 }

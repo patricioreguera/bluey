@@ -16,8 +16,10 @@
   background-image: url(/assets/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
-  padding: 50px 0px;
+  background-position: 
+  bottom;
+
+  padding: 150px 0px;
 }
 
 
