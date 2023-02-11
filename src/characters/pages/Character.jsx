@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { charactersMock } from "../data/charactersMock";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import Navbar from "../../ui/components/Navbar";
 import CardCharacter from "../components/CardCharacter";
 import "./Character.css";
 
@@ -20,12 +21,10 @@ const Character = () => {
 	);
 	const randomNumber =
 		Math.floor(Math.random() * (charactersMock.length - 4 - 1 + 1)) + 1;
-	//Math.floor(Math.random() * (maximum – minimum + 1)) + minimum
 	characterSuggestion.slice(randomNumber, randomNumber + 3);
 	// =====> back to the characters if dont match
 	if (!character) {
 		console.log(character);
-
 		return <Navigate to="/characters" />;
 	}
 	// scroll page to top every time character name change
@@ -49,6 +48,7 @@ const Character = () => {
 					</button>
 				</div>
 			</div>
+
 			<div className="container-suggestions">
 				{characterSuggestion
 					.slice(randomNumber, randomNumber + 3)

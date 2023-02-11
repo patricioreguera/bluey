@@ -67,9 +67,11 @@
     font-size: 15px;
     border-radius: 50px;
     cursor: pointer;
+    border: 2px solid var(--seconday);
 }
 
 .card-button-inverted:hover{
-    animation-play-state: running;
-    transform:  scale(1.2);
+    color: var(--seconday);
+    background-color: var(--primary);
+    border: 2px solid var(--seconday);
 }
